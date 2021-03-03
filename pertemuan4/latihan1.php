@@ -9,5 +9,13 @@
 // echo time();
 // echo date ("l", time() +60*60*24*100);
 
-echo date( "l", mktime(0,0,0,5,23,2002));
+
+//mktime
+//membuat sendiri detik
+//mktime (0,0,0,0,0,0)
+//jam, menit, detik, bulan, tanggal, tahun
+//echo date( "l", mktime(0,0,0,5,23,2002));
+
+//strtotime
+echo date("l", strtotime("23 May 2002"));
 ?>
