@@ -1,10 +1,16 @@
 <?php
-// pengkondisian/percabangan
-// if else
-// if else if else
-// ternary
-// switch
-
+/*
+Muchamad Taufik Mulyadi
+203040142
+https://github.com/MuchamadTaufik/pw2021_203040142
+Pertemuan 3( 21Februari 2021 )
+Materi Minggu ini mempelajari mengenai Struktur Kendali(Pengulangan & Pengkondisian)
+    pengkondisian/percabangan
+    if else
+    if else if else
+    ternary
+    switch
+*/
 $x = 2;
 if ( $x < 20) {
     echo "benar";

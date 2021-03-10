@@ -1,10 +1,17 @@
 <?php
-//pengulangan
-//for
-//while
-//do.. while
-//foreach : pengulangan khusus array
+/*
+Muchamad Taufik Mulyadi
+203040142
+https://github.com/MuchamadTaufik/pw2021_203040142
+Pertemuan 3( 21Februari 2021 )
+Materi Minggu ini mempelajari mengenai Struktur Kendali(Pengulangan & Pengkondisian) 
 
+    pengulangan
+    for
+    while
+    do.. while
+    foreach : pengulangan khusus array
+*/
 for ($i = 0; $i < 5; $i++) {
     echo "Hello world! <br>";
 }

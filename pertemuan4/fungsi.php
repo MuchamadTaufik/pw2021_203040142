@@ -1,4 +1,14 @@
 <?php
+
+/*
+Muchamad Taufik Mulyadi
+203040142
+https://github.com/MuchamadTaufik/pw2021_203040142
+Pertemuan 4( 30 Februari 2021 )
+Materi Minggu ini mempelajari mengenai Function
+*/
+
+
 function salam($waktu, $nama) {
     return "selamat $waktu, $nama!";
 }
