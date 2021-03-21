@@ -1,9 +1,9 @@
 <?php
 /* 
-    Linggih Kusumah dilagga
-    203040174
-    github.com/galih250/pw2021_203040174
-    Pertemuan 7( 26 Februari 2021 )
+    Muchamad Taufik Mulyadi
+    203040142
+    https://github.com/MuchamadTaufik
+    Pertemuan 7( 17 Maret 2021 )
     Materi Minggu ini mempelajari mengenai GET & POST
 */
 ?>
