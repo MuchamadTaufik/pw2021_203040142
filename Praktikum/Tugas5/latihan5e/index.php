@@ -37,7 +37,7 @@ $books = query("SELECT * FROM store");
             <?php foreach( $books as $book ) : ?>
                 <p class="Name">
                 <a href="php/detail.php?id=<?= $book['id'] ?>">
-                <img src="assets/gambar/<?= $row["gambar"]; ?>">
+                <?= $book ["Name"] ?>
                 </a>
                 </p>  
             <?php endforeach;  ?>
