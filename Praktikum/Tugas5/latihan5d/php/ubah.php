@@ -1,4 +1,13 @@
 <?php
+/*
+Muchamad Taufik Mulyadi
+203040142
+Jumat,13.00
+*/
+?>
+
+
+<?php
 require 'functions.php';
 $id = $_GET['id'];
 $book = query("SELECT * FROM store WHERE id = $id")[0];
