@@ -20,8 +20,6 @@ if (isset($_GET['cari'])) {
 }
 
 
-
-
 ?>
 <!DOCTYPE html>
 <html>
@@ -39,7 +37,7 @@ if (isset($_GET['cari'])) {
     <title></title>
     <style>
         .order .parallax-container {
-            height: 600px;
+            height: 650px;
         }
 
         .order .parallax-container .parallax img {
@@ -96,52 +94,57 @@ if (isset($_GET['cari'])) {
         <div class="parallax-container">
             <div class="parallax"><img src="assets/img/parallax.png"></div>
             <div class="container">
-                <h4>Order Here ⬇</h4>
-                <div class="row">
-                    <div class="input-field col s6">
-                        <i class="material-icons prefix">add_shopping_cart</i>
-                        <input id="add_shopping_cart" type="tel" class="validate white-text">
-                        <label for="add_shopping_cart">Your Order</label>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="input-field col s6">
-                        <i class="material-icons prefix">add_location</i>
-                        <input id="add_location" type="text" class="validate white-text">
-                        <label for="add_location">Address</label>
-                    </div>
-                    <div class="col s6 center">
-                        <div class="card-panel center">
-                            <i class="material-icons">airport_shuttle</i>
-                            <p class="ongkir">Gratis Ongkir*</p>
-                            <p class="nikmati">Nikmati Gratis Ongkir ke seluruh wilayah
-                                Jabodetabek, Banten, Jabar, Jatim, Jateng, & Yogyakarta</p>
+                <form action="" method="post">
+                    <h4>Order Here ⬇</h4>
+                    <div class="row">
+                        <div class="input-field col s6">
+                            <i class="material-icons prefix">add_shopping_cart</i>
+                            <input id="add_shopping_cart" type="tel" class="validate white-text">
+                            <label for="add_shopping_cart">Your Order</label>
                         </div>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="col s3 center">
-                        <div class="select">
-                            <p>Delivery</p>
-                            <select class="browser-default">
-                                <option value="" disabled selected>select</option>
-                                <option value="JNE">JNE</option>
-                                <option value="JNT">JNT</option>
-                                <option value="POS INDONESIA">POS INDONESIA</option>
-                            </select>
+                    <div class="row">
+                        <div class="input-field col s6">
+                            <i class="material-icons prefix">add_location</i>
+                            <input id="add_location" type="text" class="validate white-text">
+                            <label for="add_location">Address</label>
+                        </div>
+                        <div class="col s6 center">
+                            <div class="card-panel center">
+                                <i class="material-icons">airport_shuttle</i>
+                                <p class="ongkir">Gratis Ongkir*</p>
+                                <p class="nikmati">Nikmati Gratis Ongkir ke seluruh wilayah
+                                    Jabodetabek, Banten, Jabar, Jatim, Jateng, & Yogyakarta</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="input-field col s6">
-                        <i class="material-icons prefix">local_phone</i>
-                        <input id="local_phone" type="text" class="validate white-text">
-                        <label for="local_phone">Your Phone</label>
+                    <div class="row">
+                        <div class="col s3 center">
+                            <div class="select">
+                                <p>Delivery</p>
+                                <select class="browser-default">
+                                    <option value="" disabled selected>select</option>
+                                    <option value="JNE">JNE</option>
+                                    <option value="JNT">JNT</option>
+                                    <option value="POS INDONESIA">POS INDONESIA</option>
+                                </select>
+                            </div>
+                        </div>
                     </div>
+                    <div class="row">
+                        <div class="input-field col s6">
+                            <i class="material-icons prefix">local_phone</i>
+                            <input id="local_phone" type="text" class="validate white-text">
+                            <label for="local_phone">Your Phone</label>
+                        </div>
+                    </div>
+            </div>
+            <div class="row">
+                <div class="col m6">
+                    <input type="submit" value="   Send   " style="float: right; background-color: #DAA520; color: white">
                 </div>
             </div>
             <a href="php/admin.php" class=" btn waves-effect waves-light btn-small">Kembali</a>
-            <a href="php/hapus.php?id=<?= $book["id"]; ?>" onclick="return confirm('Send?');"><button class="btn waves-effect waves-light btn-small">Send</button></a>
         </div>
         </div>
     </section>

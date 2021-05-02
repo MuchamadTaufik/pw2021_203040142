@@ -49,7 +49,7 @@ if (isset($_GET['cari'])) {
                     <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
                     <ul id="nav-mobile" class="left hide-on-med-and-down">
                         <li><a href="#product">Product</a></li>
-                        <li><a href="#promo">Promo</a></li>
+                        <li><a href="profile.php">Admin</a></li>
                     </ul>
                     <ul id="nav-mobile" class="right hide-on-med-and-down">
                         <li><a href="../index.php">Order</a></li>
@@ -61,8 +61,8 @@ if (isset($_GET['cari'])) {
     </div>
     <ul class="sidenav" id="mobile-demo">
         <li><a href="#product">Product</a></li>
-        <li><a href="#promo">Promo</a></li>
-        <li><a href="#order">Order</a></li>
+        <li><a href="profile.php">Admin</a></li>
+        <li><a href="../index.php">Order</a></li>
         <li><a href="#contact">Contact Us</a></li>
     </ul>
 
@@ -223,7 +223,7 @@ if (isset($_GET['cari'])) {
                         <div class="social-media">
                             <a href="https://twitter.com/Muhamadtaufikm6"><img src="../assets/img/social media/sm1.png" alt=""></a>
                             <a href="https://api.whatsapp.com/send?phone=62895361095444"><img src="../assets/img/social media/sm2.png" alt=""></a>
-                            <a href="https://www.instagram.com/muhamadtaufikm14/"><img src="../assets/img/social media/sm3.png" alt=""></a>
+                            <a href="https://www.instagram.com/mhmdtaufikm/"><img src="../assets/img/social media/sm3.png" alt=""></a>
                         </div>
                     </div>
                 </div>
