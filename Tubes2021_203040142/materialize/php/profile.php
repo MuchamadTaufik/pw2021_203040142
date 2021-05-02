@@ -43,8 +43,8 @@ if (!isset($_SESSION["username"])) {
     }
 
     .main {
-      width: 800px;
-      height: 520px;
+      width: 600px;
+      height: 350px;
       background-color: #fafafa;
       margin: 0 auto;
       padding-top: 20px;
