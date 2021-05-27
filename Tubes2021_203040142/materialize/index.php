@@ -97,19 +97,19 @@ if (isset($_GET['cari'])) {
                 <form action="" method="post">
                     <h4>Order Here ⬇</h4>
                     <div class="row">
-                        <div class="input-field col s6">
+                        <div class="input-field col m6 s12">
                             <i class="material-icons prefix">add_shopping_cart</i>
                             <input id="add_shopping_cart" type="tel" class="validate white-text">
                             <label for="add_shopping_cart">Your Order</label>
                         </div>
                     </div>
                     <div class="row">
-                        <div class="input-field col s6">
+                        <div class="input-field col m6 s12">
                             <i class="material-icons prefix">add_location</i>
                             <input id="add_location" type="text" class="validate white-text">
                             <label for="add_location">Address</label>
                         </div>
-                        <div class="col s6 center">
+                        <div class="col m6 s12 center">
                             <div class="card-panel center">
                                 <i class="material-icons">airport_shuttle</i>
                                 <p class="ongkir">Gratis Ongkir*</p>
@@ -119,7 +119,7 @@ if (isset($_GET['cari'])) {
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col s3 center">
+                        <div class="col m3 s4 center">
                             <div class="select">
                                 <p>Delivery</p>
                                 <select class="browser-default">
@@ -132,7 +132,7 @@ if (isset($_GET['cari'])) {
                         </div>
                     </div>
                     <div class="row">
-                        <div class="input-field col s6">
+                        <div class="input-field col m6 s12">
                             <i class="material-icons prefix">local_phone</i>
                             <input id="local_phone" type="text" class="validate white-text">
                             <label for="local_phone">Your Phone</label>
