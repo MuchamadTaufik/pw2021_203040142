@@ -1,4 +1,7 @@
 <?php
+//Muchamad Taufik Mulyadi
+// 203040142
+// Praktikum Pemrograman Web
 require 'functions.php';
 
 if (isset($_POST["register"])) {
@@ -15,7 +18,6 @@ if (isset($_POST["register"])) {
     }
 }
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 

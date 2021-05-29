@@ -1,4 +1,7 @@
 <?php
+//Muchamad Taufik Mulyadi
+// 203040142
+// Praktikum Pemrograman Web
 //cek cookie
 if (isset($_COOKIE['username']) && isset($_COOKIE['hash'])) {
     $username = $_COOKIE['username'];
@@ -52,8 +55,6 @@ if (isset($_POST['submit'])) {
     $error = true;
 }
 ?>
-
-
 <!DOCTYPE html>
 <html lang="en">
 

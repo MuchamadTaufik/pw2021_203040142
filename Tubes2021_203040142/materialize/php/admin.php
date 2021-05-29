@@ -1,4 +1,7 @@
 <?php
+//Muchamad Taufik Mulyadi
+// 203040142
+// Praktikum Pemrograman Web
 session_start();
 
 if (!isset($_SESSION["username"])) {
@@ -18,12 +21,7 @@ if (isset($_GET['cari'])) {
 } else {
     $books = query("SELECT * FROM store");
 }
-
-
-
-
 ?>
-
 <!DOCTYPE html>
 <html>
 
@@ -49,7 +47,7 @@ if (isset($_GET['cari'])) {
                     <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
                     <ul id="nav-mobile" class="left hide-on-med-and-down">
                         <li><a href="#product">Product</a></li>
-                        <li><a href="profile.php">Admin</a></li>
+                        <li><a href="profile.php">Owner</a></li>
                     </ul>
                     <ul id="nav-mobile" class="right hide-on-med-and-down">
                         <li><a href="../index.php">Order</a></li>
@@ -61,7 +59,7 @@ if (isset($_GET['cari'])) {
     </div>
     <ul class="sidenav" id="mobile-demo">
         <li><a href="#product">Product</a></li>
-        <li><a href="profile.php">Admin</a></li>
+        <li><a href="profile.php">Owner</a></li>
         <li><a href="../index.php">Order</a></li>
         <li><a href="#contact">Contact Us</a></li>
     </ul>
@@ -219,7 +217,7 @@ if (isset($_GET['cari'])) {
                     </div>
                 </div>
                     <div class="col m7 s12">
-                        <h4 class="white-text center">Owner</h4>
+                        <h5 class="white-text center">Contact Owner</h5>
                         <div class="social-media">
                             <a href="https://twitter.com/Muhamadtaufikm6"><img src="../assets/img/social media/sm1.png" alt=""></a>
                             <a href="https://api.whatsapp.com/send?phone=62895361095444"><img src="../assets/img/social media/sm2.png" alt=""></a>

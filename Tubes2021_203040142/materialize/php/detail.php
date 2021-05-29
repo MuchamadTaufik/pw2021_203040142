@@ -1,4 +1,7 @@
 <?php
+//Muchamad Taufik Mulyadi
+// 203040142
+// Praktikum Pemrograman Web
 //mengecek apakah  ada id yang di kirimkan
 //jika tidak maka akan di kembalikan ke halaman login.php
 if (!isset($_GET['id'])) {
@@ -14,7 +17,6 @@ $id = $_GET['id'];
 //melakukan query dengan parameter id yang di ambil dari url 
 $books = query("SELECT * FROM store WHERE id= $id")[0];
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 

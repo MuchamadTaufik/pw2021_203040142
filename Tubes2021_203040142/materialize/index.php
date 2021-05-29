@@ -1,4 +1,7 @@
 <?php
+//Muchamad Taufik Mulyadi
+// 203040142
+// Praktikum Pemrograman Web
 session_start();
 
 if (!isset($_SESSION["username"])) {
@@ -18,8 +21,6 @@ if (isset($_GET['cari'])) {
 } else {
     $books = query("SELECT * FROM store");
 }
-
-
 ?>
 <!DOCTYPE html>
 <html>
