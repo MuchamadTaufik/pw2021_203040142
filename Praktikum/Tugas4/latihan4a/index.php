@@ -5,7 +5,6 @@ Muchamad Taufik Mulyadi
 Jumat,13.00
 */
 ?>
-
 <?php 
 //Menghubungkan ke server Database
 $conn = mysqli_connect("localhost","root","");

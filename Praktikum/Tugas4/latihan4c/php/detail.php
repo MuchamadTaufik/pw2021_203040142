@@ -5,8 +5,6 @@ Muchamad Taufik Mulyadi
 Jumat,13.00
 */
 ?>
-
-
 <?php 
 //mengecek apakah  ada id yang di kirimkan
 //jika tidak maka akan di kembalikan ke halaman index.php
@@ -23,7 +21,6 @@ $id = $_GET['id'];
 //melakukan query dengan parameter id yang di ambil dari url 
 $books = query("SELECT * FROM store WHERE id= $id")[0];
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>

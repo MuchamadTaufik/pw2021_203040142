@@ -5,15 +5,12 @@ Muchamad Taufik Mulyadi
 Jumat,13.00
 */
 ?>
-
-
 <?php 
 //Menghubungkan dengan file phplainnya
 require 'php/functions.php';
 //Melakukan query dari database
 $books = query("SELECT * FROM store");
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>

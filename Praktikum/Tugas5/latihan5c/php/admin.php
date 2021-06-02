@@ -5,19 +5,12 @@
     Jumat,13.00
     */
     ?>
-    
-    
     <?php
     // menghubungkan dengan file php lain nya
     require 'functions.php';
     //melakukan query
     $books = query ("SELECT * FROM store");
-
-
-
-
     ?>
-
     <!DOCTYPE html>
     <html lang="en">
     <head>

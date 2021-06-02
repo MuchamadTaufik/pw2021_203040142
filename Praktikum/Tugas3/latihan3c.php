@@ -3,7 +3,6 @@ Muchamad Taufik Mulyadi
 203040142
 JAM PRAKTIKUM 13:00 
 -->
-
 <?php
 
 $pemain = [
@@ -15,9 +14,7 @@ $pemain = [
     "Sadio Mane " => "Liverpool",
     "Zlatan Ibrahimovic" => "Ac Milan",
 ];
-
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 

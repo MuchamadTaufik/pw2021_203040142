@@ -5,8 +5,6 @@ Muchamad Taufik Mulyadi
 Jumat,13.00
 */
 ?>
-
-
 <?php
 require 'functions.php';
 

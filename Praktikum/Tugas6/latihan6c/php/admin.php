@@ -5,8 +5,6 @@
     Jumat,13.00
     */
     ?>
-    
-    
     <?php
     session_start();
 
@@ -29,12 +27,7 @@
         } else {
         $books = query("SELECT * FROM store");
     }
-
-
-
-
     ?>
-
     <!DOCTYPE html>
     <html lang="en">
     <head>

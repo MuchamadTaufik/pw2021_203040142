@@ -5,7 +5,6 @@ Muchamad Taufik Mulyadi
 JAM PRAKTIKUM 13:00
 */
 ?>
-
 <?php 
 $books = [
     [
@@ -90,7 +89,6 @@ $books = [
     ]
 ];
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>

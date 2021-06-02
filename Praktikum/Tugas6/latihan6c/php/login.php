@@ -5,7 +5,6 @@ Muchamad Taufik Mulyadi
 Jumat,13.00
 */
 ?>
-
 <?php
 //cek cookie
 if(isset($_COOKIE['username']) && isset($_COOKIE['hash'])) {
@@ -60,8 +59,6 @@ if (isset($_POST['submit'])) {
     $error = true;
 }
 ?>
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>

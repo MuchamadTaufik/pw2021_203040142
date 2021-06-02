@@ -1,4 +1,3 @@
-
 <?php
 /*
 Muchamad Taufik Mulyadi
@@ -6,8 +5,6 @@ Muchamad Taufik Mulyadi
 Jumat,13.00
 */
 ?>
-
-
 <?php 
 //fungsi untuk melakukan koneksi ke database
 function koneksi() {

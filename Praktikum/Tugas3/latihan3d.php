@@ -3,7 +3,6 @@ Muchamad Taufik Mulyadi
 203040142
 JAM PRAKTIKUM 13:00  
 -->
-
 <?php
 
 $pemain = [
@@ -67,9 +66,7 @@ foreach ($pemain as $item => $value) {
     $total_gol += $value['gol'];
     $total_assist += $value['assist'];
 }
-
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 

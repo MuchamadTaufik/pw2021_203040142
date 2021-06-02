@@ -3,14 +3,11 @@ Muchamad Taufik Mulyadi
 203040142
 JAM PRAKTIKUM 13:00 
 -->
-
 <?php
 
 $terkenal = ["Mohammad Salah", "Cristiano Ronaldo", "Lionel Messi
 ", "Zlatan Ibrahimovic", "Neymar Jr"];
-
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -29,7 +26,6 @@ $terkenal = ["Mohammad Salah", "Cristiano Ronaldo", "Lionel Messi
             <li><?= $ter ?></li>
         <?php endforeach; ?>
     </ol>
-
     <?php
 
     $terkenal[] = "Luca Modric";
@@ -38,7 +34,6 @@ $terkenal = ["Mohammad Salah", "Cristiano Ronaldo", "Lionel Messi
     sort($terkenal);
 
     ?>
-
     <h3>Daftar pemain bola terkenal baru</h3>
     <ol>
         <?php foreach ($terkenal as $ter) : ?>

@@ -6,8 +6,6 @@ Muchamad Taufik Mulyadi
 Jum'at 13.00
 */
 ?>
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
