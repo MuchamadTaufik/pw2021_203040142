@@ -1,4 +1,7 @@
-<?php 
+<?php
+//Muchamad Taufik Mulyadi
+// 203040142
+// Praktikum Pemrograman Web 
 //fungsi untuk melakukan koneksi ke database
 function koneksi() {
     $conn = mysqli_connect("localhost", "root", "");
