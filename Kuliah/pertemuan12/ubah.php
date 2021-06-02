@@ -7,7 +7,6 @@
     Materi Minggu ini mempelajari mengenai Koneksi dan insert data
 */
 ?>
-
 <?php
 require 'functions.php';
 
@@ -34,7 +33,6 @@ if (isset($_POST['ubah'])) {
     echo "data gagal diubah!";
   }
 }
-
 ?>
 <!DOCTYPE html>
 <html lang="en">

@@ -12,7 +12,6 @@ require 'functions.php';
         echo "data gagal ditambahkan!";
     }
 }
-
 ?>
 <!DOCTYPE html>
 <html lang="en">

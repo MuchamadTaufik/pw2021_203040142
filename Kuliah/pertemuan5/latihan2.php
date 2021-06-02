@@ -7,7 +7,6 @@
     Materi Minggu ini mempelajari mengenai Array
 */
 ?>
-
 <?php 
 // Pengulangan pada Array
 // for / foreach

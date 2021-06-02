@@ -7,7 +7,6 @@ pertemuan 2 - 8 Februari 2021
 Mempelajari mengenai sintaks PHP 
 */
 ?>
-
 <?php
 // Standar Output
 // echo, print
@@ -59,5 +58,4 @@ Mempelajari mengenai sintaks PHP
 // &&, ||, !
     $x = 30;
     var_dump($x < 20 || $x % 2 == 0);
-
 ?>

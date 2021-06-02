@@ -19,10 +19,8 @@ if ( $x < 20) {
 } else {
     echo "salah";
 }
-
 //contoh
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>

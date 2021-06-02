@@ -1,12 +1,8 @@
 <?php
-require 'functions.php';
-$mahasiswa = query("SELECT * FROM mahasiswa");
-
-//ketika tombol cari di klik
-if (isset($_POST['cari'])) {
-  $mahasiswa = cari($_POST['keyword']);
-}
+require '../functions.php';
+$mahasiswa = cari($_GET['keyword']);
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -17,17 +13,6 @@ if (isset($_POST['cari'])) {
 </head>
 
 <body>
-  <h3>Daftar Mahasiswa</h3>
-
-  <a href="tambah.php">Tambah Data Mahasiswa</a>
-  <br><br>
-
-  <form method="post" action="">
-    <input type="text" name="keyword" size="40" placeholder="masukkan keywoard pencarian" autocomplete="off" autofocus>
-    <button type="submit" name="cari">Cari!</button>
-  </form>
-  <br>
-
   <table border="1" cellpadding="10" cellspacing="0">
     <tr>
       <th>#</th>
@@ -39,7 +24,7 @@ if (isset($_POST['cari'])) {
     <?php if (empty($mahasiswa)) : ?>
       <tr>
         <td colspan="4">
-          <p style="color: red; font-style: italic;">Data mahasiswa tidak ditemukan</p>
+          <p style="color: red; font-style: italic;">data mahasiswa tidak ditemukan!</p>
         </td>
       </tr>
     <?php endif; ?>
@@ -56,7 +41,3 @@ if (isset($_POST['cari'])) {
       </tr>
     <?php endforeach; ?>
   </table>
-
-</body>
-
-</html>

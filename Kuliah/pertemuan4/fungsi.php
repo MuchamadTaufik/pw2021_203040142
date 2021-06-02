@@ -1,5 +1,4 @@
 <?php
-
 /*
 Muchamad Taufik Mulyadi
 203040142
@@ -12,9 +11,7 @@ Materi Minggu ini mempelajari mengenai Function
 function salam($waktu, $nama) {
     return "selamat $waktu, $nama!";
 }
-
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>

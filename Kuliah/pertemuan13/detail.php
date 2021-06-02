@@ -1,10 +1,9 @@
 <?php
-/* 
-    Muchamad Taufik Mulyadi
-    203040142
-    https://github.com/MuchamadTaufik
-    Pertemuan 12( 10 Mei 2021 )
-    Materi Minggu ini mempelajari mengenai Koneksi dan insert data
+/*
+Muchamad Taufik Mulyadi
+203040142
+https://github.com/MuchamadTaufik
+Pertemuan 13( 25 Mei 2021 )
 */
 ?>
 <?php
@@ -28,7 +27,7 @@ $m = query("SELECT * FROM mahasiswa WHERE id = $id");
 <body>
   <h3>Detail Mahasiswa</h3>
   <ul>
-    <li><img src="img/<?= $m['gambar']; ?>"></li>
+    <li><img src="img/<?= $m['gambar']; ?>" width="250"></li>
     <li>NRP : <?= $m['nrp']; ?></li>
     <li>Nama : <?= $m['nama']; ?></li>
     <li>Email : <?= $m['email']; ?></li>

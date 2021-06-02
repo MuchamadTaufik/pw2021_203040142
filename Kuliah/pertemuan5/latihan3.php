@@ -7,7 +7,6 @@
     Materi Minggu ini mempelajari mengenai Array
 */
 ?>
-
 <?php
 $mahasiswa = [
     ["Muchamad Taufik Mulyadi", "203040142", "TIF", "Muhamadtaufikm10@gmail.com"],

@@ -7,7 +7,6 @@
     Materi Minggu ini mempelajari mengenai Koneksi dan insert data
 */
 ?>
-
 <?php
 require 'functions.php';
 

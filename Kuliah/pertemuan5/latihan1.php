@@ -7,7 +7,6 @@
     Materi Minggu ini mempelajari mengenai Array
 */
 ?>
-
 <?php 
 // Array
 // Variable yang dapat menampung banyak nilai

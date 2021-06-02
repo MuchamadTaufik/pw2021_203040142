@@ -38,11 +38,7 @@ $i++;
     //}
     //echo "</tr>";
 //}
-
 ?>
-
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>

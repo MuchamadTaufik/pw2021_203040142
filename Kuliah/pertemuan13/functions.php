@@ -1,10 +1,9 @@
 <?php
-/* 
-    Muchamad Taufik Mulyadi
-    203040142
-    https://github.com/MuchamadTaufik
-    Pertemuan 12( 10 Mei 2021 )
-    Materi Minggu ini mempelajari mengenai Koneksi dan insert data
+/*
+Muchamad Taufik Mulyadi
+203040142
+https://github.com/MuchamadTaufik
+Pertemuan 13( 25 Mei 2021 )
 */
 ?>
 <?php
@@ -17,7 +16,6 @@ function koneksi()
 function query($query)
 {
   $conn = koneksi();
-
   $result = mysqli_query($conn, $query);
 
   // jika hasilnya hanya 1 data
@@ -26,11 +24,75 @@ function query($query)
   }
 
   $rows = [];
+
   while ($row = mysqli_fetch_assoc($result)) {
     $rows[] = $row;
   }
 
   return $rows;
+}
+
+function upload()
+{
+  $nama_file = $_FILES["gambar"]["name"];
+  $tipe_file = $_FILES["gambar"]["type"];
+  $ukuran_file = $_FILES["gambar"]["size"];
+  $error = $_FILES["gambar"]["error"];
+  $tmp_file = $_FILES["gambar"]["tmp_name"];
+
+  // cek apakah tidak ada gambar yg diupload
+  if ($error == 4) {
+    // echo "
+    //     <script>
+    //         alert('pilih gambar terlebih dahulu');
+    //     </script>
+    //     ";
+    return 'profile.png';
+  }
+
+  // cek apakah yang diupload hanya gambar
+  $daftar_gambar = ['jpg', 'jpeg', 'png'];
+  $ekstensi_file = explode('.', $nama_file);
+  $ekstensi_file = strtolower(end($ekstensi_file));
+
+  if (!in_array($ekstensi_file, $daftar_gambar)) {
+    echo "
+            <script>
+                alert('yang anda pilih bukan gambar');
+            </script>
+        ";
+    return false;
+  }
+
+  // cek tipe file
+  if ($tipe_file != 'image/jpeg' && $tipe_file != 'image/png') {
+    echo "
+            <script>
+                alert('yang anda pilih bukan gambar');
+            </script>
+        ";
+    return false;
+  }
+
+  // cek jika ukurannya terlalu besar
+  if ($ukuran_file > 5000000) {
+    echo "
+            <script>
+                alert('ukuran gambar terlalu besar');
+            </script>
+        ";
+    return false;
+  }
+
+  // lolos pengecekan
+  // siap upload
+  $nama_file_baru = uniqid();
+  $nama_file_baru .= '.';
+  $nama_file_baru .= $ekstensi_file;
+
+  move_uploaded_file($tmp_file, 'img/' . $nama_file_baru);
+
+  return $nama_file_baru;
 }
 
 function tambah($data)
@@ -41,13 +103,24 @@ function tambah($data)
   $nrp = htmlspecialchars($data['nrp']);
   $email = htmlspecialchars($data['email']);
   $jurusan = htmlspecialchars($data['jurusan']);
-  $gambar = htmlspecialchars($data['gambar']);
+  $gambar_lama = htmlspecialchars($data['gambar']);
+
+  $gambar = upload();
+
+  if (!$gambar) {
+    return false;
+  }
+
+  if ($gambar == 'profile.png') {
+    $gambar = $gambar_lama;
+  }
 
   $query = "INSERT INTO
               mahasiswa
             VALUES
             (null, '$nama', '$nrp', '$email', '$jurusan', '$gambar');
           ";
+
   mysqli_query($conn, $query) or die(mysqli_error($conn));
   return mysqli_affected_rows($conn);
 }
@@ -55,7 +128,22 @@ function tambah($data)
 function hapus($id)
 {
   $conn = koneksi();
+
+  //menghapus gambar di folder image
+  $mhs = query("SELECT * FROM mahasiswa WHERE id = $id");
+  if ($mhs['gambar'] != 'profile.png') {
+    unlink('img/' . $mhs['gambar']);
+  }
+
+
+  // menghapus gambar di folder
+  $mhs = query("SELECT * FROM mahasiswa WHERE id = $id");
+  if ($mhs['gambar'] != 'profile.png') {
+    unlink('img/' . $mhs['gambar']);
+  }
+
   mysqli_query($conn, "DELETE FROM mahasiswa WHERE id = $id") or die(mysqli_error($conn));
+
   return mysqli_affected_rows($conn);
 }
 
@@ -68,7 +156,17 @@ function ubah($data)
   $nrp = htmlspecialchars($data['nrp']);
   $email = htmlspecialchars($data['email']);
   $jurusan = htmlspecialchars($data['jurusan']);
-  $gambar = htmlspecialchars($data['gambar']);
+  $gambar_lama = htmlspecialchars($data['gambar_lama']);
+
+  $gambar = upload();
+
+  if (!$gambar) {
+    return false;
+  }
+
+  if ($gambar == 'profile.png') {
+    $gambar = $gambar_lama;
+  }
 
   $query = "UPDATE mahasiswa SET
               nama = '$nama',
@@ -77,6 +175,7 @@ function ubah($data)
               jurusan = '$jurusan',
               gambar = '$gambar'
             WHERE id = $id";
+
   mysqli_query($conn, $query) or die(mysqli_error($conn));
   return mysqli_affected_rows($conn);
 }
@@ -120,6 +219,7 @@ function login($data)
       exit;
     }
   }
+
   return [
     'error' => true,
     'pesan' => 'Username / Password Salah!'
@@ -179,6 +279,7 @@ function registrasi($data)
               VALUES
             (null, '$username', '$password_baru')
           ";
+
   mysqli_query($conn, $query) or die(mysqli_error($conn));
   return mysqli_affected_rows($conn);
 }

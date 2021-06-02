@@ -1,4 +1,12 @@
 <?php
+/*
+Muchamad Taufik Mulyadi
+203040142
+https://github.com/MuchamadTaufik
+Pertemuan 13( 25 Mei 2021 )
+*/
+?>
+<?php
 require 'functions.php';
 
 // cek apakah tombol tambah sudah ditekan
@@ -24,7 +32,7 @@ if (isset($_POST['tambah'])) {
 
 <body>
   <h3>Form Tambah Data Mahasiswa</h3>
-  <form action="" method="POST">
+  <form action="" method="POST" enctype="multipart/form-data">
     <ul>
       <li>
         <label>
@@ -53,14 +61,17 @@ if (isset($_POST['tambah'])) {
       <li>
         <label>
           Gambar :
-          <input type="text" name="gambar" required>
+          <input type="file" name="gambar" class="gambar" onchange="previewImage()">
         </label>
+        <img src="img/profile.png" width="120" style="display: block;" class="img-preview">
       </li>
       <li>
         <button type="submit" name="tambah">Tambah Data!</button>
       </li>
     </ul>
   </form>
+
+  <script src="js/script.js"></script>
 </body>
 
 </html>
